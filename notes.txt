@@ -1,0 +1,13 @@
+I had a problem because one user had no api_key so
+It would find it and let access to the api
+
+We did
+u = User.all
+u.send(:generate_api_key)
+
+STEP 1.
+fetch('http://localhost:3000/api/v1/products?api_key=be8658d93a0100efe9af9fcb63e8278d').then(r => r.text()).then(console.info)
+✅
+
+
+lifecycle methods -> componentdidmount componentwillmount
